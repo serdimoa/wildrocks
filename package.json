@@ -4,6 +4,7 @@
   "homepage": "https://serdimoa.github.io/wildrocks/",
   "private": true,
   "dependencies": {
+    "boron": "^0.2.3",
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

@@ -15,9 +15,13 @@ body {
 }
 
 #root {
-  width: 1742px;
+  min-width: 1742px;
   margin: 0 auto;
   max-width: none;
+}
+
+html {
+  min-width: 1742px;
 }
 
 * {

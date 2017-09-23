@@ -16,7 +16,7 @@ class Advantages extends React.Component {
                 title: '1.Экологически чистая',
                 content: `На сегодняшний день каждый знает
                           ценность собственного здоровья и
-                          здоровья близких, потому выбор
+                          здоровья близких, поэтому выбор
                           качественных и безопасных материалов
                           для дома – это правильный выбор. 
                           В то же время гипс не притягивает к 
@@ -44,8 +44,8 @@ class Advantages extends React.Component {
             },
             {
                 icon: icon4,
-                title: '4.Гипс не стареет, и не портиться',
-                content: `Гипс не стареет и не портиться со
+                title: '4.Гипс не стареет, и не портится',
+                content: `Гипс не стареет и не портится со
                           временем, потому сколько он
                           прослужит зависит от того насколько
                           бережно к нему относятся.`,
@@ -101,7 +101,7 @@ class Advantages extends React.Component {
                                     <li onClick={()=>this.setActive(0)} className={this.isActive(0)}>1. Экологически чистая.</li>
                                     <li onClick={()=>this.setActive(1)} className={this.isActive(1)}>2. Небольшой вес изделия.</li>
                                     <li onClick={()=>this.setActive(2)} className={this.isActive(2)}>3. Высокая простота в монтаже.</li>
-                                    <li onClick={()=>this.setActive(3)} className={this.isActive(3)}>4. Гипс не стареет и не портиться.</li>
+                                    <li onClick={()=>this.setActive(3)} className={this.isActive(3)}>4. Гипс не стареет и не портится.</li>
                                     <li onClick={()=>this.setActive(4)} className={this.isActive(4)}>5. Звуко- и теплоизоляция.</li>
                                     <li onClick={()=>this.setActive(5)} className={this.isActive(5)}>6. Низкая цена.</li>
                                 </ul>
