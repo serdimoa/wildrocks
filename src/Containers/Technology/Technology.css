@@ -19,8 +19,6 @@
 .technology-block {
     display: block;
     margin: 86px auto 0;
-    max-width: 1742px;
-    width: 1742px;
 }
 
 .technology-header {
@@ -35,7 +33,6 @@
 .technology-content-area {
     height: 651px;
     display: flex;
-    width: 1500px;
     margin-left: 159px;
 }
 

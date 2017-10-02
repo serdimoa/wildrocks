@@ -1,5 +1,8 @@
 import React from 'react';
+import InputMask from 'react-input-mask';
 import './Footer.css';
+
+const Modal = require('boron/DropModal');
 
 const buttonRequest = () => (
 
@@ -54,28 +57,67 @@ const footerImg = () => (
     </svg>
 );
 
-const Footer = () => {
-    return (
-        <div className="footer">
-            <div className="footer-bg"/>
-            <div className="footer-button-block">
-                <button className="footer-button">
-                    {buttonRequest()}
-                </button>
-            </div>
-            <div className="footer-block">
-                <div className="footer-block-left">
-                    {footerImg()}
+class Footer extends React.Component {
+    showModal = () => {
+        this.modal.show();
+    };
+
+    hideModal = () => {
+        this.modal.hide();
+    };
+
+    render(){
+        return (
+            <div className="footer">
+                <div className="footer-bg"/>
+                <div className="footer-button-block" style={{position: 'relative'}}>
+                    <button className="footer-button" onClick={this.showModal}>
+                        {buttonRequest()}
+                    </button>
                 </div>
-                <div className="footer-block-right">
-                    <div className="footer-block-phone">
-                        <p className="footer-block-phone-line"><a href="tel:+38095519442">+38 (095) 519-44-2</a>  / <a
-                            href="tel:+380502680003">+38 (050) 268-00-03</a></p>
+                <div className="footer-block">
+                    <div className="footer-block-left">
+                        {footerImg()}
+                    </div>
+                    <div className="footer-block-right">
+                        <div className="footer-block-phone">
+                            <p className="footer-block-phone-line"><a href="tel:+38095519442">+38 (095) 519-44-2</a>  / <a
+                                href="tel:+380502680003">+38 (050) 268-00-03</a></p>
+                        </div>
                     </div>
                 </div>
+                <Modal ref={(modal)=>{this.modal=modal}}>
+                        <form method="POST" action="http://formspree.io/serdimoa@gmail.com" className="form" >
+                            <h2>Заявка</h2>
+                            <h3>Заполните данную форму и <br/> мы с вами свяжемся </h3>
+                            <input type="hidden" name="_subject" value="Новая заявка с сайта!" />
+                            <input type="hidden" name="_language" value="ru" />
+                            <input type="text" name="_gotcha" style={{display: 'none'}} />
+                            <input type="hidden" name="_next" value="//wildrocks.ru" />
+                            <label htmlFor="name" className="input">
+                                <span>
+                                    Ваше имя
+                                </span>
+                                <input id="name" name="Имя" />
+                            </label>
+                            <label htmlFor="phone" className="input">
+                                <span>
+                                    Телефон
+                                </span>
+                                <InputMask id="phone" name="Телефон" mask="+38 (999) 999-99-99" />
+                            </label>
+                            <label htmlFor="message" className="input">
+                                <span>
+                                    Сопроводительное сообщение
+                                </span>
+                                <textarea id="message" name="Cообщение"></textarea>
+                            </label>
+                            <button className="send" type="submit">Отправить</button>
+                        </form>
+                    </Modal>
             </div>
-        </div>
-    )
+        )
+    }
 };
 
 export default Footer;

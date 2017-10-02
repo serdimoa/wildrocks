@@ -2,6 +2,7 @@
     background-image: url(main.png);
     height: 975px;
     position: relative;
+    background-size: cover;
 }
 
 .header-bg{
@@ -15,7 +16,6 @@
 }
 
 .header-block {
-    width: 1742px;
     margin: 0 auto;
     padding-top: 40px;
     position: relative;
@@ -101,4 +101,95 @@
 .header-block-button{
     margin-left: 60px;
     margin-top: -51px;
+}
+
+
+.form {
+    padding: 28px 71px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea,
+.input input {
+    font-size: 19px !important;
+    line-height: 24px !important;
+    letter-spacing: undefined !important;
+    padding-top: undefined !important;
+    padding-bottom: undefined !important;
+    color: #484848 !important;
+    font-weight: normal !important;
+    background-color: transparent !important;
+    border: 0px !important;
+    padding: 11px !important;
+    width: 100% !important;
+    text-overflow: ellipsis !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #DBDBDB !important;
+    border-radius: 2px !important;
+    background-color: #ffffff !important;
+    margin-bottom: 16px;
+}
+
+.input span {
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    letter-spacing: 0.4px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    font-weight: 400;
+    color: #484848 !important;
+}
+
+.send {
+    cursor: pointer !important;
+    -webkit-transition: background 0.3s, border-color 0.3s !important;
+    -moz-transition: background 0.3s, border-color 0.3s !important;
+    transition: background 0.3s, border-color 0.3s !important;
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border: 2px solid transparent !important;
+    border-radius: 4px !important;
+    width: 100% !important;
+    line-height: 22px !important;
+    letter-spacing: undefined !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    min-width: 77.66563145999496px !important;
+    background: #FF5A5F !important;
+    color: #ffffff;
+    font-size: 19px !important;
+}
+
+form h2 {
+    font-size: 40px !important;
+    line-height: 46px !important;
+    letter-spacing: -0.8px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    color: #484848 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+form h3 {
+    font-size: 19px !important;
+    line-height: 24px !important;
+    letter-spacing: undefined !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #484848 !important;
+    margin-bottom: 8px !important;
 }

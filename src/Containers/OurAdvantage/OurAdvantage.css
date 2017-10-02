@@ -15,8 +15,6 @@
 .our-advantage-block {
     display: block;
     margin: 86px auto 0;
-    max-width: 1742px;
-    width: 1742px;
 }
 
 .our-advantage-header {
@@ -28,15 +26,19 @@
 }
 
 .our-advantage-content-item {
-    width: 784px;
     margin-top: 51px;
     float: left;
+    width: calc(50% - 16px);
+    max-width: 650px;
 }
 
 .our-advantage-content{
-    width: 1584px;
     margin: 0 auto;
     clear: both;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 .our-advantage-content-item-img{
@@ -54,7 +56,7 @@
 }
 .our-advantage-content-item-text{
     position: relative;
-    font-size: 25px;
+    font-size: 19px;
     color: #FFFFFF;
     letter-spacing: 0;
 }

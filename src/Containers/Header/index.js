@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../Components/Button';
 import logo from './wild-rocks-logo1.svg';
+import InputMask from 'react-input-mask';
 import './Header.css';
 
 const Modal = require('boron/DropModal');
@@ -13,10 +14,6 @@ class Header extends React.Component {
 
     hideModal = () => {
         this.modal.hide();
-    };
-
-    callback = (event) =>{
-        console.log(event);
     };
 
     render(){
@@ -47,9 +44,34 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <Modal ref={(modal)=>{this.modal=modal}}>
-                        <h2>I am a dialog</h2>
-                        <button onClick={this.hideModal}>Close</button>
-                    </Modal>
+                    <form method="POST" action="http://formspree.io/serdimoa@gmail.com" className="form" >
+                        <h2>Заявка</h2>
+                        <h3>Заполните данную форму и <br/> мы с вами свяжемся </h3>
+                        <input type="hidden" name="_subject" value="Новая заявка с сайта!" />
+                        <input type="hidden" name="_language" value="ru" />
+                        <input type="text" name="_gotcha" style={{display: 'none'}} />
+                        <input type="hidden" name="_next" value="//wildrocks.ru" />
+                        <label htmlFor="name" className="input">
+                            <span>
+                                Ваше имя
+                            </span>
+                            <input id="name" name="Имя" />
+                        </label>
+                        <label htmlFor="phone" className="input">
+                            <span>
+                                Телефон
+                            </span>
+                            <InputMask id="phone" name="Телефон" mask="+38 (999) 999-99-99" />
+                        </label>
+                        <label htmlFor="message" className="input">
+                            <span>
+                                Сопроводительное сообщение
+                            </span>
+                            <textarea id="message" name="Cообщение"></textarea>
+                        </label>
+                        <button className="send" type="submit">Отправить</button>
+                    </form>
+                </Modal>
             </div>
         );
     }

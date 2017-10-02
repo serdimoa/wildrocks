@@ -6,8 +6,6 @@
 .advantages-block {
     display: block;
     margin: 86px auto 0;
-    max-width: 1742px;
-    width: 1742px;
 }
 
 .advantages-header {
@@ -30,9 +28,7 @@
 .advantages-content-area {
     height: 651px;
     display: flex;
-    width: 1500px;
-    margin-left: 159px;
-    background: url("./cook_room.svg") 0 0 no-repeat;
+    background: url("./cook_room.svg") -21px 0 no-repeat;
 }
 
 .advantages-content{
@@ -40,16 +36,18 @@
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.11);
     padding-top: 36px;
     height: 705px;
+    display: flex;
+    justify-content: center;
 }
 .advantages-left-block {
-    width: 503px;
+    width: 448px;
     margin-left: 83px;
     margin-top: 73px;
 }
 
 .advantages-right-block{
     width: 400px;
-    margin-left: 555px;
+    margin-left: 490px;
     margin-top: 70px;
 }
 
@@ -68,7 +66,7 @@
     display: block;
     clear: both;
     margin-top: 12px;
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     letter-spacing: 0;
     line-height: 30px;

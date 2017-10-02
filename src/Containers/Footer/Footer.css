@@ -9,6 +9,7 @@
     height: 560px;
     position: absolute;
     width: 100%;
+    background-size: cover;
     top: -100px;
 }
 
@@ -28,7 +29,6 @@
 }
 
 .footer-block{
-    width: 1767px;
     position: relative;
     margin: 194px auto 0;
 }
@@ -47,6 +47,5 @@
 }
 
 .footer-block-right{
-    float: left;
-    margin-left: 560px;
+    float: right;
 }

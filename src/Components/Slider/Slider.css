@@ -8,11 +8,11 @@
 
 .slide-right {
     float: left;
-    max-width: 642px;
-    width: 642px;
+    max-width: 600px;
+    width: 600px;
     margin-top: 68px;
     position: absolute;
-    right: 20px;
+    right: 80px;
 }
 
 .slide-title {
